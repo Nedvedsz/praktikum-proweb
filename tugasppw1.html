@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Praktikum Pemrograman Web</title>
+  </head>
+  <center>
+    <body>
+      <h2><u>Form Pemesanan Mobil Travel</u></h2>
+      <form action="#" method="post">
+        <table border="0" cellpadding="10">
+          <!-- Nama Penumpang -->
+          <tr>
+            <td><label for="nama">Nama Penumpang</label></td>
+            <td>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan Nama"
+              />
+            </td>
+          </tr>
+
+          <!-- Email Penumpang -->
+          <tr>
+            <td><label for="email">Email Penumpang</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nama@gmail.com"
+              />
+            </td>
+          </tr>
+
+          <!-- Nomor HP Penumpang -->
+          <tr>
+            <td><label for="nohp">Nomor HP</label></td>
+            <td>
+              <input
+                type="number"
+                id="nohp"
+                name="nohp"
+                placeholder="08xxxxxxxxx"
+              />
+            </td>
+          </tr>
+
+          <!-- Destinasi Penumpang -->
+          <tr>
+            <td><label for="destinasi">Destinasi</label></td>
+            <td>
+              <select name="destinasi">
+                <option>-- Pilih Destinasi --</option>
+                <option value="Padang">Padang</option>
+                <option value="Aek loba">Aek Loba</option>
+                <option value="Pematang siantar">Pematang siantar</option>
+                <option value="Prapat">Prapat</option>
+                <option value="Pekanbaru">Pekanbaru</option>
+                <option value="Banda Aceh">Banda Aceh</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Tanggal Berangkat -->
+          <tr>
+            <td><label for="tanggal">Tanggal Berangkat</label></td>
+            <td><input type="date" id="tanggal" name="tanggal" /></td>
+          </tr>
+
+          <!-- Waktu Berangkat -->
+          <tr>
+            <td><label for="waktu">Waktu Berangkat</label></td>
+            <td><input type="time" id="waktu" name="waktu" /></td>
+          </tr>
+
+          <!-- Jumlah Penumpang -->
+          <tr>
+            <td><label for="jumlah">Jumlah Penumpang</label></td>
+            <td>
+              <input
+                type="number"
+                id="jumlah"
+                name="jumlah"
+                size=""
+                placeholder="Masukkan Angka"
+              />
+            </td>
+          </tr>
+
+          <!-- Layanan Yang Tersedia -->
+          <tr>
+            <td><label for="armada">Pilihan Armada</label></td>
+            <td>
+              <input type="radio" id="hiace" name="armada" value="hiace" />
+              <label for="hiace">Mobil Hiace</label><br />
+
+              <input type="radio" id="hiace" name="armada" />
+              <label for="bus">Bus Laksana</label><br />
+
+              <input type="radio" id="elf" name="armada" value="elf" />
+              <label for="elf">ELF</label>
+            </td>
+          </tr>
+
+          <!-- Layanan Tambahan -->
+          <tr>
+            <td><label for="layanan">Layanan Tambahan</label></td>
+            <td>
+              <input type="checkbox" id="makanan" name="layanan" />
+              <label for="makanan">Makanan</label><br />
+
+              <input type="checkbox" id="minuman" name="layanan" />
+              <label for="minuman">Air Mineral</label><br />
+
+              <input type="checkbox" id="selimut" name="layanan" />
+              <label for="selimut">Selimut</label>
+            </td>
+          </tr>
+
+          <!-- Upload Identitas -->
+          <tr>
+            <td><label for="identitas">Upload Identitas (KTP)</label></td>
+            <td><input type="file" id="identitas" name="identitas" /></td>
+          </tr>
+        </table>
+
+        <!-- Button Pesan Tiket -->
+        <button type="submit">Pesan Tiket</button>
+        <button type="reset">Reset</button>
+      </form>
+    </body>
+  </center>
+</html>
